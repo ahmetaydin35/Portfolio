@@ -20,7 +20,7 @@ const About = () => {
         <div className="flex justify-center">
           <a
             href="/public/resume.pdf"
-            download
+            download="resume.pdf"
             className="btn-primary bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4"
           >
             Download CV
