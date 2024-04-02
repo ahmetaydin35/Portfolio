@@ -19,7 +19,7 @@ const About = () => {
       <div className="flex justify-center">
         <div className="flex justify-center">
           <a
-            href="/public/myResume.pdf"
+            href="/public/resume.pdf"
             download
             className="btn-primary bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4"
           >
