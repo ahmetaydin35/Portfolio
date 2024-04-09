@@ -4,12 +4,18 @@ import {
   FaCss3Alt,
   FaJs,
   FaReact,
-  FaNodeJs,
+  FaNode,
   FaGit,
   FaBootstrap,
 } from "react-icons/fa";
-import { DiMysql, DiGithub } from "react-icons/di";
-import { SiReactrouter, SiRedux } from "react-icons/si";
+import { DiMysql, DiMongodb } from "react-icons/di";
+import {
+  SiReactrouter,
+  SiRedux,
+  SiTypescript,
+  SiTailwindcss,
+  SiExpress,
+} from "react-icons/si";
 
 export const links = [
   { id: nanoid(), href: "#home", text: "home" },
@@ -31,18 +37,23 @@ export const skills = [
   },
   {
     id: nanoid(),
+    title: "Bootstrap",
+    icon: <FaBootstrap className="h-16 w-16 text-emerald-500" />,
+  },
+  {
+    id: nanoid(),
     title: "Javascript",
     icon: <FaJs className="h-16 w-16 text-emerald-500" />,
   },
   {
     id: nanoid(),
-    title: "React",
-    icon: <FaReact className="h-16 w-16 text-emerald-500" />,
+    title: "TypeScript",
+    icon: <SiTypescript className="h-16 w-16 text-emerald-500" />,
   },
   {
     id: nanoid(),
-    title: "Node JS & Express JS",
-    icon: <FaNodeJs className="h-16 w-16 text-emerald-500" />,
+    title: "React",
+    icon: <FaReact className="h-16 w-16 text-emerald-500" />,
   },
   {
     id: nanoid(),
@@ -56,13 +67,28 @@ export const skills = [
   },
   {
     id: nanoid(),
+    title: "Node JS",
+    icon: <FaNode className="h-16 w-16 text-emerald-500" />,
+  },
+  {
+    id: nanoid(),
+    title: "Express JS",
+    icon: <SiExpress className="h-16 w-16 text-emerald-500" />,
+  },
+  {
+    id: nanoid(),
+    title: "MongoDB",
+    icon: <DiMongodb className="h-16 w-16 text-emerald-500" />,
+  },
+  {
+    id: nanoid(),
     title: "MySQL",
     icon: <DiMysql className="h-16 w-16 text-emerald-500" />,
   },
   {
     id: nanoid(),
-    title: "Bootstrap",
-    icon: <FaBootstrap className="h-16 w-16 text-emerald-500" />,
+    title: "Tailwind",
+    icon: <SiTailwindcss className="h-16 w-16 text-emerald-500" />,
   },
 ];
 
