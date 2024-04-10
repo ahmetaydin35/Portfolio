@@ -28,67 +28,67 @@ export const skills = [
   {
     id: nanoid(),
     title: "HTML",
-    icon: <FaHtml5 className="h-16 w-16 text-emerald-500" />,
+    icon: <FaHtml5 className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "CSS",
-    icon: <FaCss3Alt className="h-16 w-16 text-emerald-500" />,
+    icon: <FaCss3Alt className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "Bootstrap",
-    icon: <FaBootstrap className="h-16 w-16 text-emerald-500" />,
+    icon: <FaBootstrap className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "Javascript",
-    icon: <FaJs className="h-16 w-16 text-emerald-500" />,
+    icon: <FaJs className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "TypeScript",
-    icon: <SiTypescript className="h-16 w-16 text-emerald-500" />,
+    icon: <SiTypescript className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "React",
-    icon: <FaReact className="h-16 w-16 text-emerald-500" />,
+    icon: <FaReact className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "Redux",
-    icon: <SiRedux className="h-16 w-16 text-emerald-500" />,
+    icon: <SiRedux className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "React Router",
-    icon: <SiReactrouter className="h-16 w-16 text-emerald-500" />,
+    icon: <SiReactrouter className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "Node JS",
-    icon: <FaNode className="h-16 w-16 text-emerald-500" />,
+    icon: <FaNode className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "Express JS",
-    icon: <SiExpress className="h-16 w-16 text-emerald-500" />,
+    icon: <SiExpress className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "MongoDB",
-    icon: <DiMongodb className="h-16 w-16 text-emerald-500" />,
+    icon: <DiMongodb className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "MySQL",
-    icon: <DiMysql className="h-16 w-16 text-emerald-500" />,
+    icon: <DiMysql className="h-16 w-16" />,
   },
   {
     id: nanoid(),
     title: "Tailwind",
-    icon: <SiTailwindcss className="h-16 w-16 text-emerald-500" />,
+    icon: <SiTailwindcss className="h-16 w-16" />,
   },
 ];
 
