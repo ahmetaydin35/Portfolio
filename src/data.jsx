@@ -15,6 +15,7 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiExpress,
+  SiGraphql,
 } from "react-icons/si";
 
 export const links = [
@@ -74,6 +75,11 @@ export const skills = [
     id: nanoid(),
     title: "Express JS",
     icon: <SiExpress className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "GraphQL",
+    icon: <SiGraphql className="h-16 w-16" />,
   },
   {
     id: nanoid(),
