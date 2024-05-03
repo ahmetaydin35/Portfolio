@@ -2,12 +2,11 @@ import { nanoid } from "nanoid";
 import {
   FaHtml5,
   FaCss3Alt,
-  FaJs,
   FaReact,
-  FaNode,
-  FaGit,
+  FaNodeJs,
   FaBootstrap,
 } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
 import { DiMysql, DiMongodb } from "react-icons/di";
 import {
   SiReactrouter,
@@ -16,6 +15,7 @@ import {
   SiTailwindcss,
   SiExpress,
   SiGraphql,
+  SiJavascript,
 } from "react-icons/si";
 
 export const links = [
@@ -44,7 +44,7 @@ export const skills = [
   {
     id: nanoid(),
     title: "Javascript",
-    icon: <FaJs className="h-16 w-16" />,
+    icon: <SiJavascript className="h-16 w-16 rounded" />,
   },
   {
     id: nanoid(),
@@ -68,8 +68,13 @@ export const skills = [
   },
   {
     id: nanoid(),
+    title: "Next JS",
+    icon: <RiNextjsFill className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
     title: "Node JS",
-    icon: <FaNode className="h-16 w-16" />,
+    icon: <FaNodeJs className="h-16 w-16" />,
   },
   {
     id: nanoid(),
