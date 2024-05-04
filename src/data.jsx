@@ -106,6 +106,13 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
+    img: "https://i.ibb.co/HBPmKfW/Fire-Shot-Capture-004-Property-A-Find-The-Perfect-Rental-propertya-vercel-app.png",
+    url: "https://propertya.vercel.app",
+    github: "https://github.com/ahmetaydin35/Propertya",
+    title: "Property A (with Next JS)",
+  },
+  {
+    id: nanoid(),
     img: "https://i.ibb.co/PCFkJvQ/Color-Generator.png",
     url: "https://color-generator-52rl.onrender.com",
     github: "https://github.com/ahmetaydin35",
