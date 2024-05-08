@@ -113,6 +113,13 @@ export const projects = [
   },
   {
     id: nanoid(),
+    img: "https://i.ibb.co/F5wBSnC/GPTTOUR.png",
+    url: "https://gpttour.vercel.app",
+    github: "https://github.com/ahmetaydin35/GPTTour",
+    title: "GPTTour (with Next JS, CHATGPT API)",
+  },
+  {
+    id: nanoid(),
     img: "https://i.ibb.co/PCFkJvQ/Color-Generator.png",
     url: "https://color-generator-52rl.onrender.com",
     github: "https://github.com/ahmetaydin35",
