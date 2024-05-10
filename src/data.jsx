@@ -120,10 +120,10 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: "https://i.ibb.co/PCFkJvQ/Color-Generator.png",
-    url: "https://color-generator-52rl.onrender.com",
+    img: "https://i.ibb.co/G0kC2Fz/Fire-Shot-Capture-003-Comfy-Store-comfy-store-4zpn-onrender-com.png",
+    url: "https://comfy-store-4zpn.onrender.com/",
     github: "https://github.com/ahmetaydin35",
-    title: "Color Generator",
+    title: "Comfy Store",
   },
   {
     id: nanoid(),
@@ -134,9 +134,9 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: "https://i.ibb.co/G0kC2Fz/Fire-Shot-Capture-003-Comfy-Store-comfy-store-4zpn-onrender-com.png",
-    url: "https://comfy-store-4zpn.onrender.com/",
+    img: "https://i.ibb.co/PCFkJvQ/Color-Generator.png",
+    url: "https://color-generator-52rl.onrender.com",
     github: "https://github.com/ahmetaydin35",
-    title: "Comfy Store",
+    title: "Color Generator",
   },
 ];
