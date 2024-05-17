@@ -43,7 +43,7 @@ export const skills = [
   },
   {
     id: nanoid(),
-    title: "Javascript",
+    title: "JavaScript",
     icon: <SiJavascript className="h-16 w-16 rounded" />,
   },
   {
