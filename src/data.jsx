@@ -16,6 +16,7 @@ import {
   SiExpress,
   SiGraphql,
   SiJavascript,
+  SiPrisma,
 } from "react-icons/si";
 
 export const links = [
@@ -83,8 +84,8 @@ export const skills = [
   },
   {
     id: nanoid(),
-    title: "GraphQL",
-    icon: <SiGraphql className="h-16 w-16" />,
+    title: "Prisma",
+    icon: <SiPrisma className="h-16 w-16" />,
   },
   {
     id: nanoid(),
@@ -100,6 +101,11 @@ export const skills = [
     id: nanoid(),
     title: "Tailwind",
     icon: <SiTailwindcss className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "GraphQL",
+    icon: <SiGraphql className="h-16 w-16" />,
   },
 ];
 
