@@ -6,7 +6,7 @@ import {
   FaNodeJs,
   FaBootstrap,
 } from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
+import { RiNextjsFill, RiReactjsFill } from "react-icons/ri";
 import { DiMysql, DiMongodb } from "react-icons/di";
 import {
   SiReactrouter,
@@ -16,6 +16,7 @@ import {
   SiExpress,
   SiGraphql,
   SiJavascript,
+  SiExpo,
   SiPrisma,
 } from "react-icons/si";
 
@@ -41,6 +42,11 @@ export const skills = [
     id: nanoid(),
     title: "Bootstrap",
     icon: <FaBootstrap className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "Tailwind",
+    icon: <SiTailwindcss className="h-16 w-16" />,
   },
   {
     id: nanoid(),
@@ -84,8 +90,8 @@ export const skills = [
   },
   {
     id: nanoid(),
-    title: "Prisma",
-    icon: <SiPrisma className="h-16 w-16" />,
+    title: "GraphQL",
+    icon: <SiGraphql className="h-16 w-16" />,
   },
   {
     id: nanoid(),
@@ -99,13 +105,18 @@ export const skills = [
   },
   {
     id: nanoid(),
-    title: "Tailwind",
-    icon: <SiTailwindcss className="h-16 w-16" />,
+    title: "Prisma",
+    icon: <SiPrisma className="h-16 w-16" />,
   },
   {
     id: nanoid(),
-    title: "GraphQL",
-    icon: <SiGraphql className="h-16 w-16" />,
+    title: "React Native",
+    icon: <RiReactjsFill className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "Expo",
+    icon: <SiExpo className="h-16 w-16" />,
   },
 ];
 
