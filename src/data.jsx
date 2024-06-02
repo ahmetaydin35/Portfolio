@@ -5,6 +5,7 @@ import {
   FaReact,
   FaNodeJs,
   FaBootstrap,
+  FaDocker,
 } from "react-icons/fa";
 import { RiNextjsFill, RiReactjsFill } from "react-icons/ri";
 import { DiMysql, DiMongodb } from "react-icons/di";
@@ -118,8 +119,12 @@ export const skills = [
     title: "Expo",
     icon: <SiExpo className="h-16 w-16" />,
   },
+  {
+    id: nanoid(),
+    title: "Docker",
+    icon: <FaDocker className="h-16 w-16" />,
+  },
 ];
-
 export const projects = [
   {
     id: nanoid(),
