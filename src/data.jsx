@@ -19,6 +19,7 @@ import {
   SiJavascript,
   SiExpo,
   SiPrisma,
+  SiKubernetes,
 } from "react-icons/si";
 
 export const links = [
@@ -123,6 +124,11 @@ export const skills = [
     id: nanoid(),
     title: "Docker",
     icon: <FaDocker className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "Kubernetes",
+    icon: <SiKubernetes className="h-16 w-16" />,
   },
 ];
 export const projects = [
