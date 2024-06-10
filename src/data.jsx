@@ -151,7 +151,7 @@ export const projects = [
     img: "https://i.ibb.co/F5wBSnC/GPTTOUR.png",
     url: "https://gpttour.vercel.app",
     github: "https://github.com/ahmetaydin35/GPTTour",
-    title: "GPTTour (with Next JS, CHATGPT API)",
+    title: "GPTTour (Next JS, CHATGPT)",
   },
   {
     id: nanoid(),
