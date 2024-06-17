@@ -20,6 +20,7 @@ import {
   SiExpo,
   SiPrisma,
   SiKubernetes,
+  SiSequelize,
 } from "react-icons/si";
 
 export const links = [
@@ -104,6 +105,11 @@ export const skills = [
     id: nanoid(),
     title: "MySQL",
     icon: <DiMysql className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "Sequelize ",
+    icon: <SiSequelize className="h-16 w-16" />,
   },
   {
     id: nanoid(),
