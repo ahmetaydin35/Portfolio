@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { RiNextjsFill, RiReactjsFill } from "react-icons/ri";
 import { DiMysql, DiMongodb } from "react-icons/di";
+import { BiLogoPostgresql } from "react-icons/bi";
 import {
   SiReactrouter,
   SiRedux,
@@ -21,6 +22,7 @@ import {
   SiPrisma,
   SiKubernetes,
   SiSequelize,
+  SiPostgresql,
 } from "react-icons/si";
 
 export const links = [
@@ -105,6 +107,11 @@ export const skills = [
     id: nanoid(),
     title: "MySQL",
     icon: <DiMysql className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "PostgreSQL",
+    icon: <BiLogoPostgresql className="h-16 w-16" />,
   },
   {
     id: nanoid(),
