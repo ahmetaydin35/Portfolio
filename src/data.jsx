@@ -22,7 +22,7 @@ import {
   SiPrisma,
   SiKubernetes,
   SiSequelize,
-  SiPostgresql,
+  SiRedis,
 } from "react-icons/si";
 
 export const links = [
@@ -117,6 +117,11 @@ export const skills = [
     id: nanoid(),
     title: "Sequelize ",
     icon: <SiSequelize className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "Redis ",
+    icon: <SiRedis className="h-16 w-16" />,
   },
   {
     id: nanoid(),
