@@ -23,6 +23,7 @@ import {
   SiKubernetes,
   SiSequelize,
   SiRedis,
+  SiPuppeteer,
 } from "react-icons/si";
 
 export const links = [
@@ -147,6 +148,11 @@ export const skills = [
     id: nanoid(),
     title: "Kubernetes",
     icon: <SiKubernetes className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "Puppeteer",
+    icon: <SiPuppeteer className="h-16 w-16" />,
   },
 ];
 export const projects = [
