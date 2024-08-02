@@ -24,6 +24,7 @@ import {
   SiSequelize,
   SiRedis,
   SiPuppeteer,
+  SiJest,
 } from "react-icons/si";
 
 export const links = [
@@ -153,6 +154,11 @@ export const skills = [
     id: nanoid(),
     title: "Puppeteer",
     icon: <SiPuppeteer className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "Jest",
+    icon: <SiJest className="h-16 w-16" />,
   },
 ];
 export const projects = [
