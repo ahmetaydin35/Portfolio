@@ -164,6 +164,13 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
+    img: "https://i.ibb.co/QMWjHqt/Shopping.png",
+    url: "https://shopping-ea57.onrender.com",
+    github: "https://github.com/ahmetaydin35/Shopping",
+    title: "Shopping (with MERN Stack)",
+  },
+  {
+    id: nanoid(),
     img: "https://i.ibb.co/HBPmKfW/Fire-Shot-Capture-004-Property-A-Find-The-Perfect-Rental-propertya-vercel-app.png",
     url: "https://propertya.vercel.app",
     github: "https://github.com/ahmetaydin35/Propertya",
