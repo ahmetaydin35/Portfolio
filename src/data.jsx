@@ -26,6 +26,7 @@ import {
   SiPuppeteer,
   SiJest,
   SiAngular,
+  SiNestjs,
 } from "react-icons/si";
 
 export const links = [
@@ -100,6 +101,11 @@ export const skills = [
     id: nanoid(),
     title: "Express JS",
     icon: <SiExpress className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "Nest JS",
+    icon: <SiNestjs className="h-16 w-16" />,
   },
   {
     id: nanoid(),

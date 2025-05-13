@@ -15,6 +15,10 @@
       "dest": "/web-coding.svg"
     },
     {
+      "src": "/resume.pdf",
+      "dest": "/resume.pdf"
+    },
+    {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
     },
