@@ -25,6 +25,7 @@ import {
   SiRedis,
   SiPuppeteer,
   SiJest,
+  SiAngular,
 } from "react-icons/si";
 
 export const links = [
@@ -69,6 +70,11 @@ export const skills = [
     id: nanoid(),
     title: "React",
     icon: <FaReact className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "Angular",
+    icon: <SiAngular className="h-16 w-16" />,
   },
   {
     id: nanoid(),
