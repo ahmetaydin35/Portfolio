@@ -11,6 +11,14 @@
   ],
   "routes": [
     {
+      "src": "/web-coding.svg",
+      "dest": "/web-coding.svg"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
