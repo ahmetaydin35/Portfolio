@@ -39,26 +39,6 @@ export const links = [
 export const skills = [
   {
     id: nanoid(),
-    title: "HTML",
-    icon: <FaHtml5 className="h-16 w-16" />,
-  },
-  {
-    id: nanoid(),
-    title: "CSS",
-    icon: <FaCss3Alt className="h-16 w-16" />,
-  },
-  {
-    id: nanoid(),
-    title: "Bootstrap",
-    icon: <FaBootstrap className="h-16 w-16" />,
-  },
-  {
-    id: nanoid(),
-    title: "Tailwind",
-    icon: <SiTailwindcss className="h-16 w-16" />,
-  },
-  {
-    id: nanoid(),
     title: "JavaScript",
     icon: <SiJavascript className="h-16 w-16 rounded" />,
   },
@@ -76,6 +56,11 @@ export const skills = [
     id: nanoid(),
     title: "Angular",
     icon: <SiAngular className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "Tailwind",
+    icon: <SiTailwindcss className="h-16 w-16" />,
   },
   {
     id: nanoid(),
@@ -134,13 +119,13 @@ export const skills = [
   },
   {
     id: nanoid(),
-    title: "Redis ",
-    icon: <SiRedis className="h-16 w-16" />,
+    title: "Prisma",
+    icon: <SiPrisma className="h-16 w-16" />,
   },
   {
     id: nanoid(),
-    title: "Prisma",
-    icon: <SiPrisma className="h-16 w-16" />,
+    title: "Redis ",
+    icon: <SiRedis className="h-16 w-16" />,
   },
   {
     id: nanoid(),
@@ -176,17 +161,17 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
-    img: "https://i.ibb.co/QMWjHqt/Shopping.png",
-    url: "https://shopping-ea57.onrender.com",
-    github: "https://github.com/ahmetaydin35/Shopping",
-    title: "Shopping (with MERN Stack)",
-  },
-  {
-    id: nanoid(),
     img: "https://i.ibb.co/HBPmKfW/Fire-Shot-Capture-004-Property-A-Find-The-Perfect-Rental-propertya-vercel-app.png",
     url: "https://propertya.vercel.app",
     github: "https://github.com/ahmetaydin35/Propertya",
     title: "Property A (with Next JS)",
+  },
+  {
+    id: nanoid(),
+    img: "https://i.ibb.co/QMWjHqt/Shopping.png",
+    url: "https://shopping-ea57.onrender.com",
+    github: "https://github.com/ahmetaydin35/Shopping",
+    title: "Shopping (with MERN Stack)",
   },
   {
     id: nanoid(),
