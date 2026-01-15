@@ -1,12 +1,5 @@
 import { nanoid } from "nanoid";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaNodeJs,
-  FaBootstrap,
-  FaDocker,
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDocker } from "react-icons/fa";
 import { RiNextjsFill, RiReactjsFill } from "react-icons/ri";
 import { DiMysql, DiMongodb } from "react-icons/di";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -27,6 +20,7 @@ import {
   SiJest,
   SiAngular,
   SiNestjs,
+  SiCsharp,
 } from "react-icons/si";
 
 export const links = [
@@ -46,6 +40,11 @@ export const skills = [
     id: nanoid(),
     title: "TypeScript",
     icon: <SiTypescript className="h-16 w-16" />,
+  },
+  {
+    id: nanoid(),
+    title: "C#",
+    icon: <SiCsharp className="h-16 w-16" />,
   },
   {
     id: nanoid(),
