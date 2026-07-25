@@ -2,8 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-paper font-body text-ink antialiased;
+  }
+  ::selection {
+    @apply bg-blueprint text-white;
+  }
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-blueprint;
+  }
+}
+
 @layer components {
   .align-element {
-    @apply mx-auto max-w-7xl px-8;
+    @apply mx-auto max-w-page px-5 sm:px-8;
+  }
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.2em];
+  }
+}
+
+/* Drafting-sheet grid: fine minor lines + stronger major lines,
+   drawn on a pseudo-element and faded out so it reads as texture, not wallpaper */
+.blueprint-grid {
+  position: relative;
+}
+.blueprint-grid > * {
+  position: relative;
+}
+.blueprint-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(147, 178, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(147, 178, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(147, 178, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(147, 178, 255, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px, 24px 24px, 120px 120px, 120px 120px;
+  -webkit-mask-image: radial-gradient(110rem 60rem at 85% -10%, black 25%, transparent 70%);
+  mask-image: radial-gradient(110rem 60rem at 85% -10%, black 25%, transparent 70%);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.rise {
+  animation: rise 0.6s ease-out both;
+}
+.rise-delay-1 {
+  animation-delay: 0.1s;
+}
+.rise-delay-2 {
+  animation-delay: 0.2s;
+}
+.rise-delay-3 {
+  animation-delay: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
   }
 }

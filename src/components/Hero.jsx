@@ -1,32 +1,100 @@
-import heroImg from "../assets/newhero.svg";
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { profile, titleBlock } from "../data";
 
 const Hero = () => {
   return (
-    <div className="bg-emerald-100 py-24">
-      <div className="align-element grid md:grid-cols-2 items-center gap-8">
+    <section id="home" className="blueprint-grid bg-ink text-white">
+      <div className="align-element grid gap-14 py-20 md:py-28 lg:grid-cols-[1fr,24rem] lg:gap-20">
         <article>
-          <h1 className="text-6xl font-bold tracking-wider">I'm Ahmet Aydın</h1>
-          <p className="mt-4 text-3xl text-slate-700 capitalize tracking-wide">
-            Full Stack Developer
+          <p className="eyebrow rise text-mist">{profile.title}</p>
+          <h1 className="rise rise-delay-1 mt-5 font-display text-5xl font-black leading-[0.95] tracking-tight xs:text-6xl md:text-7xl lg:text-8xl">
+            Ahmet
+            <br />
+            Aydın
+          </h1>
+          <p className="rise rise-delay-2 mt-8 max-w-xl leading-relaxed text-mist">
+            {profile.summary}
           </p>
-          {/* <p className="mt-2 text-lg text-slate-700 capitalize tracking-wide">
-            turning ideas into interactive reality
-          </p> */}
-          <div className="flex gap-x-4 mt-4">
-            <a href="https://github.com/ahmetaydin35">
-              <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+          <div className="rise rise-delay-3 mt-10 flex flex-wrap items-center gap-4">
+            <a
+              href="#work"
+              className="bg-blueprint px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-white transition-colors duration-200 hover:bg-blueprint-deep"
+            >
+              View work
             </a>
-            <a href="https://www.linkedin.com/in/ahmetaydin35/">
-              <FaLinkedin className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+            <a
+              href={profile.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-white/25 px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-white transition-colors duration-200 hover:border-amber hover:text-amber"
+            >
+              Resume
             </a>
+            <div className="flex items-center gap-4 pl-1">
+              <a href={`mailto:${profile.email}`} aria-label="Email">
+                <HiOutlineMail className="h-6 w-6 text-mist transition-colors duration-200 hover:text-white" />
+              </a>
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin className="h-6 w-6 text-mist transition-colors duration-200 hover:text-white" />
+              </a>
+              <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <FaGithub className="h-6 w-6 text-mist transition-colors duration-200 hover:text-white" />
+              </a>
+            </div>
           </div>
         </article>
-        <article className="hidden md:block">
-          <img src={heroImg} className="h-80 lg:h-96" />
-        </article>
+
+        {/* Title block — styled after the corner sheet of a technical drawing */}
+        <aside className="rise rise-delay-3 self-center">
+          <div className="border border-white/20 bg-ink-2/70 font-mono text-xs">
+            <div className="flex items-center justify-between border-b border-white/20 px-4 py-3">
+              <span className="uppercase tracking-[0.2em] text-white">Title block</span>
+              <span className="text-mist">SHEET 01 / 06</span>
+            </div>
+            {titleBlock.map(({ label, value, links }) => (
+              <div
+                key={label}
+                className="grid grid-cols-[7.5rem,1fr] border-b border-white/10 last:border-b-0"
+              >
+                <span className="border-r border-white/10 px-4 py-3 uppercase tracking-wider text-mist">
+                  {label}
+                </span>
+                <span className="px-4 py-3 text-white">
+                  {links
+                    ? links.map((l, i) => (
+                        <span key={l.href}>
+                          {i > 0 && <span className="text-mist">, </span>}
+                          <a
+                            href={l.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline decoration-white/30 underline-offset-4 transition-colors duration-200 hover:text-amber"
+                          >
+                            {l.text}
+                          </a>
+                        </span>
+                      ))
+                    : value}
+                </span>
+              </div>
+            ))}
+            <div className="flex items-center justify-between px-4 py-3">
+              <span className="flex items-center gap-2 text-white">
+                <span className="h-2 w-2 rounded-full bg-amber" aria-hidden="true" />
+                Building at Bimodel
+              </span>
+              <span className="text-mist">REV 2026.07</span>
+            </div>
+          </div>
+        </aside>
       </div>
-    </div>
+    </section>
   );
 };
 export default Hero;
