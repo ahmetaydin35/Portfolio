@@ -1,5 +1,6 @@
 import { skillGroups } from "../data";
 import SectionHeader from "./SectionHeader";
+import { Badge } from "./ui/badge";
 
 const Skills = () => {
   return (
@@ -17,12 +18,11 @@ const Skills = () => {
               </h3>
               <ul className="flex flex-wrap gap-2">
                 {items.map(({ name, icon: Icon }) => (
-                  <li
-                    key={name}
-                    className="flex items-center gap-2 border border-hairline bg-paper px-3 py-1.5 font-mono text-sm text-ink transition-colors duration-200 hover:border-blueprint"
-                  >
-                    {Icon && <Icon className="h-4 w-4 text-blueprint" aria-hidden="true" />}
-                    {name}
+                  <li key={name}>
+                    <Badge className="px-3 py-1.5 text-sm font-normal text-ink hover:border-blueprint">
+                      {Icon && <Icon className="h-4 w-4 text-blueprint" aria-hidden="true" />}
+                      {name}
+                    </Badge>
                   </li>
                 ))}
               </ul>

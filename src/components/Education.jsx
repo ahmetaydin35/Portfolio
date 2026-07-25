@@ -1,5 +1,6 @@
 import { education, honours, languages } from "../data";
 import SectionHeader from "./SectionHeader";
+import { Card, CardContent } from "./ui/card";
 
 const Education = () => {
   return (
@@ -19,8 +20,8 @@ const Education = () => {
               </article>
             ))}
           </div>
-          <div>
-            <div className="border border-hairline bg-paper p-7">
+          <Card className="self-start bg-paper">
+            <CardContent className="p-7 pt-7">
               <h3 className="eyebrow text-blueprint">Honours & awards</h3>
               <ul className="mt-5 space-y-4">
                 {honours.map(({ id, title, detail }) => (
@@ -31,16 +32,19 @@ const Education = () => {
                 ))}
               </ul>
               <h3 className="eyebrow mt-8 text-blueprint">Languages</h3>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-3">
                 {languages.map(({ id, name, level }) => (
-                  <li key={id} className="flex items-baseline justify-between gap-4">
+                  <li
+                    key={id}
+                    className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
+                  >
                     <span className="font-semibold">{name}</span>
-                    <span className="font-mono text-sm text-pen">{level}</span>
+                    <span className="text-sm text-pen sm:text-right">{level}</span>
                   </li>
                 ))}
               </ul>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

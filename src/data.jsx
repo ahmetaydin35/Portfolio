@@ -42,6 +42,7 @@ export const nav = [
   { href: "#work", text: "Work" },
   { href: "#experience", text: "Experience" },
   { href: "#skills", text: "Skills" },
+  { href: "#projects", text: "Projects" },
   { href: "#education", text: "Education" },
   { href: "#contact", text: "Contact" },
 ];
@@ -245,20 +246,12 @@ export const skillGroups = [
 
 export const projects = [
   {
-    id: "pr-03",
-    img: "https://i.ibb.co/GHcVvT9/Job-Track.png",
-    url: "https://jobstracking.vercel.app",
-    github: "https://github.com/ahmetaydin35/JobTrack",
-    title: "JobTrack",
-    stack: "React, Node.js",
-  },
-  {
-    id: "pr-04",
-    img: "https://i.ibb.co/F5wBSnC/GPTTOUR.png",
-    url: "https://gpttour.vercel.app",
-    github: "https://github.com/ahmetaydin35/GPTTour",
-    title: "GPTTour",
-    stack: "Next.js, OpenAI API",
+    id: "pr-05",
+    img: "/astore.jpg",
+    url: "https://astore-red.vercel.app",
+    github: "https://github.com/ahmetaydin35",
+    title: "Astore",
+    stack: "Next.js, E-commerce",
   },
   {
     id: "pr-01",
@@ -275,6 +268,22 @@ export const projects = [
     github: "https://github.com/ahmetaydin35/Shopping",
     title: "Shopping",
     stack: "MERN Stack",
+  },
+  {
+    id: "pr-03",
+    img: "https://i.ibb.co/GHcVvT9/Job-Track.png",
+    url: "https://jobstracking.vercel.app",
+    github: "https://github.com/ahmetaydin35/JobTrack",
+    title: "JobTrack",
+    stack: "React, Node.js",
+  },
+  {
+    id: "pr-04",
+    img: "https://i.ibb.co/F5wBSnC/GPTTOUR.png",
+    url: "https://gpttour.vercel.app",
+    github: "https://github.com/ahmetaydin35/GPTTour",
+    title: "GPTTour",
+    stack: "Next.js, OpenAI API",
   },
 ];
 

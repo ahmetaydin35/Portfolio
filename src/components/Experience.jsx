@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 md:py-28">
       <div className="align-element">
-        <SectionHeader index="Sheet 03" title="Experience" note="2022 – Present" />
+        <SectionHeader index="Sheet 03" title="Experience" />
         <div className="mt-4">
           {experience.map(({ id, role, company, period, place, bullets }) => (
             <article

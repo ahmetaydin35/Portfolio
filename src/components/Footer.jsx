@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { profile } from "../data";
+import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
@@ -10,20 +11,18 @@ const Footer = () => {
           Let&apos;s build something that ships.
         </h2>
         <div className="mt-10 flex flex-wrap items-center gap-4">
-          <a
-            href={`mailto:${profile.email}`}
-            className="bg-blueprint px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-white transition-colors duration-200 hover:bg-blueprint-deep"
-          >
+          <Button href={`mailto:${profile.email}`} size="lg">
             {profile.email}
-          </a>
-          <a
+          </Button>
+          <Button
             href={profile.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-white/25 px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-white transition-colors duration-200 hover:border-amber hover:text-amber"
+            variant="outline-dark"
+            size="lg"
           >
             Resume
-          </a>
+          </Button>
           <div className="flex items-center gap-4 pl-1">
             <a
               href={profile.linkedin}

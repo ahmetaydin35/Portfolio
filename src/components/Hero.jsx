@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { profile, titleBlock } from "../data";
+import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
@@ -17,20 +18,18 @@ const Hero = () => {
             {profile.summary}
           </p>
           <div className="rise rise-delay-3 mt-10 flex flex-wrap items-center gap-4">
-            <a
-              href="#work"
-              className="bg-blueprint px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-white transition-colors duration-200 hover:bg-blueprint-deep"
-            >
+            <Button href="#work" size="lg">
               View work
-            </a>
-            <a
+            </Button>
+            <Button
               href={profile.resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-white/25 px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-white transition-colors duration-200 hover:border-amber hover:text-amber"
+              variant="outline-dark"
+              size="lg"
             >
               Resume
-            </a>
+            </Button>
             <div className="flex items-center gap-4 pl-1">
               <a href={`mailto:${profile.email}`} aria-label="Email">
                 <HiOutlineMail className="h-6 w-6 text-mist transition-colors duration-200 hover:text-white" />
@@ -52,7 +51,7 @@ const Hero = () => {
 
         {/* Title block — styled after the corner sheet of a technical drawing */}
         <aside className="rise rise-delay-3 self-center">
-          <div className="border border-white/20 bg-ink-2/70 font-mono text-xs">
+          <div className="overflow-hidden rounded-xl border border-white/20 bg-ink-2/70 font-mono text-xs shadow-sm">
             <div className="flex items-center justify-between border-b border-white/20 px-4 py-3">
               <span className="uppercase tracking-[0.2em] text-white">Title block</span>
               <span className="text-mist">SHEET 01 / 06</span>
