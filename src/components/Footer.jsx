@@ -1,27 +1,29 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { profile } from "../data";
+import { profile, ui } from "../data";
+import { useLang } from "../i18n";
 import { Button } from "./ui/button";
 
 const Footer = () => {
+  const { t } = useLang();
   return (
     <footer id="contact" className="bg-ink text-white">
       <div className="align-element py-20 md:py-28">
-        <p className="eyebrow text-mist">Contact</p>
+        <p className="eyebrow text-mist">{t(ui.contactEyebrow)}</p>
         <h2 className="mt-5 max-w-3xl font-display text-4xl font-black tracking-tight sm:text-5xl md:text-6xl">
-          Let&apos;s build something that ships.
+          {t(ui.contactHeading)}
         </h2>
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <Button href={`mailto:${profile.email}`} size="lg">
             {profile.email}
           </Button>
           <Button
-            href={profile.resume}
+            href={t(profile.resume)}
             target="_blank"
             rel="noopener noreferrer"
             variant="outline-dark"
             size="lg"
           >
-            Resume
+            {t(ui.resume)}
           </Button>
           <div className="flex items-center gap-4 pl-1">
             <a

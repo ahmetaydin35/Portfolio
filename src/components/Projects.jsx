@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
-import { projects } from "../data";
+import { projects, ui } from "../data";
 import SectionHeader from "./SectionHeader";
 import { Card } from "./ui/card";
 
@@ -8,7 +8,11 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 md:py-28">
       <div className="align-element">
-        <SectionHeader index="Sheet 05" title="Earlier & personal work" note="2022 – 2024" />
+        <SectionHeader
+          sheetNo="05"
+          title={ui.sections.projects.title}
+          note={ui.sections.projects.note}
+        />
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map(({ id, img, url, github, title, stack }) => (
             <Card

@@ -1,14 +1,16 @@
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
-import { featured } from "../data";
+import { featured, ui } from "../data";
+import { useLang } from "../i18n";
 import SectionHeader from "./SectionHeader";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { Badge } from "./ui/badge";
 
 const FeaturedWork = () => {
+  const { t } = useLang();
   return (
     <section id="work" className="bg-white py-20 md:py-28">
       <div className="align-element">
-        <SectionHeader index="Sheet 02" title="Selected work" note="Two live SaaS products" />
+        <SectionHeader sheetNo="02" title={ui.sections.work.title} note={ui.sections.work.note} />
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
           {featured.map(({ id, index, title, url, urlText, tagline, description, stack }) => (
             <Card
@@ -21,16 +23,16 @@ const FeaturedWork = () => {
                     {index}
                   </span>
                   <Badge variant="secondary" className="bg-white font-mono">
-                    Production
+                    {t(ui.production)}
                   </Badge>
                 </div>
                 <h3 className="pt-4 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
                   {title}
                 </h3>
-                <p className="font-medium text-pen">{tagline}</p>
+                <p className="font-medium text-pen">{t(tagline)}</p>
               </CardHeader>
               <CardContent className="px-7 sm:px-8">
-                <p className="leading-relaxed text-pen">{description}</p>
+                <p className="leading-relaxed text-pen">{t(description)}</p>
                 <ul className="mt-6 flex flex-wrap gap-2">
                   {stack.map((item) => (
                     <li key={item}>
