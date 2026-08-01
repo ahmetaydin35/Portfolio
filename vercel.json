@@ -10,18 +10,7 @@
     }
   ],
   "routes": [
-    {
-      "src": "/web-coding.svg",
-      "dest": "/web-coding.svg"
-    },
-    {
-      "src": "/resume.pdf",
-      "dest": "/resume.pdf"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
-    },
+    { "handle": "filesystem" },
     {
       "src": "/(.*)",
       "dest": "/index.html"
