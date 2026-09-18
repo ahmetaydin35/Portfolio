@@ -100,7 +100,7 @@ export const titleBlock = [
     label: { en: "Live products", tr: "Yayındaki ürünler" },
     links: [
       { text: "bimodel.net", href: "https://bimodel.net" },
-      { text: "configira.com", href: "https://configira.com" },
+      { text: "configera.com", href: "https://configera.com" },
     ],
   },
   { label: { en: "Core stack", tr: "Teknolojiler" }, value: "TypeScript, Node.js, C#, Python" },
@@ -140,9 +140,9 @@ export const featured = [
   {
     id: "fw-02",
     index: "FW-02",
-    title: "Configira",
-    url: "https://configira.com",
-    urlText: "configira.com",
+    title: "Configera",
+    url: "https://configera.com",
+    urlText: "configera.com",
     tagline: {
       en: "On-demand BIM model configurator",
       tr: "Talep üzerine BIM model konfigüratörü",
